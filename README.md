@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Flex - Vacation Rental Property Management Platform
+
+## Tech Stack
+
+### Core
+- **Next.js 15.5.2** - React framework with App Router
+- **React 19.1.0** - UI library  
+- **TypeScript** - Type safety
+- **Tailwind CSS 4** - Styling
+
+### UI Components
+- **Radix UI** - Headless UI primitives
+- **shadcn/ui** - Component system
+- **Lucide React** - Icons
+
+### Data & Analytics
+- **Recharts** - Charts and data visualization
+
+### Development
+- **Turbopack** - Fast development builds
+- **ESLint** - Code linting
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run development server**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Open your browser**
+```
+http://localhost:3000
+```
 
-## Learn More
+### Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev    # Start development server with Turbopack
+npm run build  # Build for production  
+npm run start  # Start production server
+npm run lint   # Run ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── (pages)/
+│   │   ├── dashboard/           # Property manager dashboard
+│   │   └── property/           # Property listings & details
+│   ├── api/reviews/hostaway/   # API endpoints
+│   └── components/             # Reusable components
+├── lib/
+│   ├── api/                    # API utilities
+│   └── types/                  # TypeScript definitions
+└── services/                   # Business logic & mock data
+```
 
-## Deploy on Vercel
+## Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Property Portfolio Management** - View and manage multiple properties
+- **Review Management** - Approve/reject reviews from booking platforms  
+- **Analytics Dashboard** - Performance metrics and insights
+- **Multi-channel Support** - Airbnb, Booking.com, Vrbo integration
+- **Responsive Design** - Mobile-friendly interface
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## API Integration
+
+Currently uses mock Hostaway API data for development. The app simulates:
+- Review fetching and filtering
+- Review approval workflows  
+- Property data aggregation
+- Performance analytics
+
+Ready for real Hostaway API integration by replacing the mock service in `src/services/hostaway.tsx`.
