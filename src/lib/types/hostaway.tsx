@@ -96,5 +96,10 @@ export interface PropertyDetail {
         title: string;
         ratings: { stars: number; percentage: number; count: string }[];
     };
-    categories: { name: string; rating: number; description: string; iconType: string }[];
+    categories: { 
+        name: string; 
+        rating: number; 
+        description: string; 
+        iconType: 'cleanliness' | 'accuracy' | 'checkin' | 'communication' | 'location' | 'value';
+    }[];
 }

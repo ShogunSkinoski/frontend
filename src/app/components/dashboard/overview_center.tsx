@@ -75,9 +75,9 @@ export function OverviewCenter() {
             <div className="space-y-4">
               {[
                 { action: "New booking", property: "Sunset Villa", time: "2 hours ago" },
-                { action: "Review received", property: "Ocean View Apt", time: "4 hours ago" },
-                { action: "Check-out completed", property: "Mountain Cabin", time: "6 hours ago" },
-                { action: "Payment received", property: "City Loft", time: "1 day ago" },
+                { action: "Review received", property: "Ocean View Apartment", time: "4 hours ago" },
+                { action: "Check-out completed", property: "Mountain Cabin Retreat", time: "6 hours ago" },
+                { action: "Payment received", property: "Downtown City Loft", time: "1 day ago" },
               ].map((activity, index) => (
                 <div
                   key={index}
@@ -102,9 +102,9 @@ export function OverviewCenter() {
             <div className="space-y-4">
               {[
                 { name: "Sunset Villa", revenue: "$3,240", occupancy: "95%" },
-                { name: "Ocean View Apt", revenue: "$2,890", occupancy: "92%" },
-                { name: "Mountain Cabin", revenue: "$2,650", occupancy: "88%" },
-                { name: "City Loft", revenue: "$2,420", occupancy: "85%" },
+                { name: "Ocean View Apartment", revenue: "$2,890", occupancy: "92%" },
+                { name: "Mountain Cabin Retreat", revenue: "$2,650", occupancy: "88%" },
+                { name: "Downtown City Loft", revenue: "$2,420", occupancy: "85%" },
               ].map((property, index) => (
                 <div
                   key={index}

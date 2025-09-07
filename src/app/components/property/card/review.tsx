@@ -127,75 +127,8 @@ return (
 };
 
 const ReviewsList = ({ 
-    reviews = [
-      {
-        id: '1478965481505668097',
-        title: 'Marybeth',
-        userName: 'Marybeth',
-        userLocation: 'Wyckoff, New Jersey',
-        userImage: null,
-        rating: 5,
-        date: 'August 2025',
-        stayDuration: 'Stayed a few nights',
-        content: 'I have nothing but positive things to say about the place and Estelle. It was in a beautiful location she was warm and welcoming and you felt like you had made a friend by the time you left. I would highly recommend this place and Estelle. If I am so lucky when I come back to Paris to stay there I would be delighted.'
-      },
-      {
-        id: '1476783982468482008',
-        title: 'Lenore',
-        userName: 'Lenore',
-        userLocation: 'California, United States',
-        userImage: 'https://a0.muscache.com/im/pictures/user/0bec7bb7-919f-409e-b5a0-db89a702cd02.jpg?im_w=240',
-        rating: 5,
-        date: 'July 2025',
-        stayDuration: 'Stayed a few nights',
-        content: 'Estelle\'s place offers an incredible opportunity to explore Paris for the solo traveler. It is central & walkable, with several Michelin recommended restaurants within a few blocks-- great for foodies! By far the most outstanding resource is Estelle, herself, with an international perspective, great local tips and a warm, welcoming demeanor, she is a true gem!'
-      },
-      {
-        id: '1466559528224926914',
-        title: 'Vivien',
-        userName: 'Vivien',
-        userLocation: '14 years on Airbnb',
-        userImage: 'https://a0.muscache.com/im/users/1616547/profile_pic/1326793893/original.jpg?im_w=240',
-        rating: 5,
-        date: 'July 2025',
-        stayDuration: 'Stayed a few nights',
-        content: 'I had an absolutely wonderful time at Estelle\'s place. She is incredibly friendly and helpful with recommendations. She would go and buy me Pain au chocolat and apple pies in the morning. Would cut up fruit and serve homemade coffee as well. Her and her place are a delight and the area she lives in is incredible as well.'
-      },
-      {
-        id: '1464466917038567683',
-        title: 'Courtney',
-        userName: 'Courtney',
-        userLocation: 'San Diego, California',
-        userImage: 'https://a0.muscache.com/im/pictures/user/User/original/0c016758-3eb1-4008-95f2-945e9e167678.jpeg?im_w=240',
-        rating: 5,
-        date: 'July 2025',
-        stayDuration: 'Stayed a few nights',
-        content: 'This is the most perfect place to stay for anyone traveling to Paris. Estelle is the most amazing host. She made me feel right at home. She took the time to tell me about the neighborhood and provided amazing recommendations. It\'s the perfect location, walkable to some of the best Paris has to offer. I will definitely be coming back to stay with Estelle!'
-      },
-      {
-        id: '1501415683854775119',
-        title: 'Belinda',
-        userName: 'Belinda',
-        userLocation: '9 years on Airbnb',
-        userImage: 'https://a0.muscache.com/im/pictures/user/dde8e54b-2f77-47ce-b223-14e4721861af.jpg?im_w=240',
-        rating: 5,
-        date: '5 days ago',
-        stayDuration: 'Stayed a few nights',
-        content: 'I loved staying at Estelle\'s place. She is such a warm and interesting person. I loved our chats. Her apartment has loads of character. It\'s very conveniently located but also very quiet. Enjoyed my stay immensely and found Estelle to be a very generous and thoughtful host.'
-      },
-      {
-        id: '1486853202618856980',
-        title: 'Alexandra',
-        userName: 'Alexandra',
-        userLocation: 'New York, New York',
-        userImage: 'https://a0.muscache.com/im/pictures/user/ca7d3475-ec01-43f6-b2d2-bfb32ef21eae.jpg?im_w=240',
-        rating: 5,
-        date: '3 weeks ago',
-        stayDuration: 'Stayed a few nights',
-        content: 'Estelle was a lovely and welcoming host! The room was lovely, bed was comfortable and I woke up to the best little breakfasts! Overall a very cute spot, centrally located and with a wonderful host. If you\'re traveling solo, Estelle\'s place is a delight :)'
-      }
-    ],
-    layout = "grid", // "list" or "grid"
+    reviews = [],
+    layout = "grid",
     className = ""
   }: ReviewsListProps) => {
     return (

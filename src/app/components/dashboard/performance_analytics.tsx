@@ -125,9 +125,9 @@ export function PerformanceAnalytics() {
               <SelectContent>
                 <SelectItem value="all">All Properties</SelectItem>
                 <SelectItem value="sunset-villa">Sunset Villa</SelectItem>
-                <SelectItem value="ocean-view">Ocean View Apt</SelectItem>
-                <SelectItem value="mountain-cabin">Mountain Cabin</SelectItem>
-                <SelectItem value="city-loft">City Loft</SelectItem>
+                <SelectItem value="ocean-view-apartment">Ocean View Apartment</SelectItem>
+                <SelectItem value="mountain-cabin-retreat">Mountain Cabin Retreat</SelectItem>
+                <SelectItem value="downtown-city-loft">Downtown City Loft</SelectItem>
               </SelectContent>
             </Select>
           </div>

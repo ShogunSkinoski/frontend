@@ -61,7 +61,7 @@ export class PropertiesAPI {
         const propertyMap = new Map<string, Property>();
 
         reviews.forEach(review => {
-            const listingId = review.listingId;
+            const listingId = this.extractListingId(review.listingName);
             const listingName = review.listingName;
 
             if (!propertyMap.has(listingId)) {
@@ -127,6 +127,18 @@ export class PropertiesAPI {
         return Array.from(propertyMap.values()).sort((a, b) => 
             b.latestReview.getTime() - a.latestReview.getTime()
         );
+    }
+
+    private static extractListingId(listingName: string): string {
+        // Create consistent IDs for our property names
+        const propertyIdMap: { [key: string]: string } = {
+            'Sunset Villa': 'sunset-villa',
+            'Ocean View Apartment': 'ocean-view-apartment', 
+            'Mountain Cabin Retreat': 'mountain-cabin-retreat',
+            'Downtown City Loft': 'downtown-city-loft'
+        };
+        
+        return propertyIdMap[listingName] || listingName.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 10);
     }
 
     static generatePropertyDetails(property: Property) {
