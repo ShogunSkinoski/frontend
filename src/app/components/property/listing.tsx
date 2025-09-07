@@ -12,11 +12,7 @@ import {
 import { Property } from "@/lib/types/hostaway"
 import Image from "next/image"
 import Header from "@/app/components/common/header"
-
-interface PropertiesListingProps {
-    onPropertySelect: (property: Property) => void;
-    className?: string;
-}
+import { useRouter } from "next/navigation"
 
 interface RawReview {
     id: number;
@@ -36,11 +32,11 @@ interface RawReview {
     rejectionReason?: string;
 }
 
-export function PropertiesListing({ onPropertySelect, className }: PropertiesListingProps) {
+export function PropertiesListing() {
     const [properties, setProperties] = useState<Property[]>([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
-
+    const router = useRouter()
     useEffect(() => {
         fetchProperties()
     }, [])
@@ -178,7 +174,7 @@ export function PropertiesListing({ onPropertySelect, className }: PropertiesLis
     }
 
     return (
-        <div className={`space-y-8 ${className} mt-24  bg-[rgb(255, 253, 246)`}>
+        <div className={`space-y-8 mt-24  bg-[rgb(255, 253, 246)`}>
             <Header />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -282,7 +278,7 @@ export function PropertiesListing({ onPropertySelect, className }: PropertiesLis
                             )}
 
                             <Button 
-                                onClick={() => onPropertySelect(property)}
+                                onClick={() => router.push(`/property/${property.id}`)}
                                 className="w-full bg-[#284E4C] hover:bg-[#284E4C]/80"
                             >
                                 <Eye className="h-4 w-4 mr-2" />
