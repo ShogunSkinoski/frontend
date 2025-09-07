@@ -24,7 +24,6 @@ export default function PropertyPage() {
                 }
                 
                 if (result.property) {
-                    // Now properly await the async generatePropertyDetails method
                     const propertyDetailData = await PropertiesAPI.generatePropertyDetails(result.property);
                     setPropertyDetail(propertyDetailData);
                 }

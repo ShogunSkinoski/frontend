@@ -181,13 +181,12 @@ export function PropertiesListing() {
     }
 
     return (
-        <div className={`space-y-8 mt-24  bg-[rgb(255, 253, 246)`}>
+        <div className={`space-y-8 mt-24  bg-[rgb(255, 253, 246)]`}>
             <Header />
 
             <div className="container mx-auto px-4">
                 <div className="mb-8">
-                    <h1 className="text-3xl font-bold text-[#333333] mb-2">Property Portfolio</h1>
-                    <p className="text-[#5C5C5A]">Manage and view all your vacation rental properties</p>
+                    <h1 className="text-3xl font-bold text-[#333333] mb-2">Properties</h1>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

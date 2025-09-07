@@ -19,7 +19,7 @@ import CurrencyDropdown from '../dropdown/currency';
 
 interface HeaderProps {
   className?: string;
-  scrollThreshold?: number; // Scroll position to trigger color change
+  scrollThreshold?: number; 
 }
 
 const landlords = [
@@ -99,7 +99,7 @@ const Header: React.FC<HeaderProps> = ({
                     </button>
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Content className="absolute right-0 z-[200] mt-1 min-w-[8rem] overflow-hidden rounded-md p-1 text-popover-foreground bg-white border border-gray-200 shadow-lg" align="end">
-                    {landlords.map((landlord) => (
+                  {landlords.map((landlord) => (
                       <Link href={landlord.href} key={landlord.name}>
                         <DropdownMenu.Item className={isScrolled ? "cursor-pointer relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors cursor-pointer hover:bg-[#064749] hover:text-white focus:bg-[#064749] focus:text-white" : "cursor-pointer relative flex select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors cursor-pointer hover:bg-[#064749] hover:text-white focus:bg-[#064749] focus:text-white"}>
                           <span className={isScrolled ? "mr-2 text-white" : "mr-2 text-[#333333]"}>{landlord.flag}</span>

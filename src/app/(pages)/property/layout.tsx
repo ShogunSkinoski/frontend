@@ -6,7 +6,7 @@ export default function PropertyLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-[rgb(255, 253, 246)]">
             {children}
         </div>
     );

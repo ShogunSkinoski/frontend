@@ -38,7 +38,6 @@ export class HostawayService {
   }
 
   private extractListingId(listingName: string): string {
-    // Create consistent IDs for our property names
     const propertyIdMap: { [key: string]: string } = {
       'Sunset Villa': 'sunset-villa',
       'Ocean View Apartment': 'ocean-view-apartment', 

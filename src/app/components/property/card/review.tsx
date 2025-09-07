@@ -44,7 +44,7 @@ const renderStars = (rating = 5) => {
     <StarIcon key={i} />
     ));
 };
-
+debugger;
 return (
     <div className="flex flex-col gap-4 p-4 rounded-lg bg-white h-fit">
     {/* Header with user info */}

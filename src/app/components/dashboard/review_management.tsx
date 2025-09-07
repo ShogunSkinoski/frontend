@@ -451,18 +451,7 @@ export function ReviewManagement({ className }: ReviewManagementProps) {
                           Reject
                         </Button>
                       </>
-                    ) : (
-                      <>
-                        <Button size="sm" variant="outline">
-                          <MessageSquare className="h-3 w-3 mr-1" />
-                          Respond
-                        </Button>
-                        <Button size="sm" variant="outline">
-                          <ExternalLink className="h-3 w-3 mr-1" />
-                          View in Hostaway
-                        </Button>
-                      </>
-                    )}
+                    ) : <></>}
                   </div>
                 </CardContent>
               </Card>

@@ -74,7 +74,6 @@ const ReviewsSection = ({
   className = ""
 }: ReviewsSectionProps) => {
   
-  // Function to render the appropriate icon
   const renderIcon = (iconType: string) => {
     const iconClassName = "w-6 h-6";
     
